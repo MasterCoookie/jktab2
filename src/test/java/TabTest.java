@@ -8,6 +8,8 @@ import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 import pl.polsl.jktab.Models.Listing;
 import pl.polsl.jktab.Models.ListingAccessException;
 import pl.polsl.jktab.Models.Tab;
@@ -46,13 +48,11 @@ public class TabTest {
         this.tab.addListing(testListing3);
     }
     
-    @Test
-    public void testRemoveListing() {       
+    @ParameterizedTest
+    @ValueSource(ints = {-1, 0, 99999})
+    public void testRemoveListing(int index) {       
         try {
-            this.tab.removeListing(1, username);
-            
-            fail("not implemented");
-            this.tab.removeListing(99999, username);
+            this.tab.removeListing(index, username2);
         } catch(ListingAccessException e) {
             fail("ListingAccessException occurred");
         }

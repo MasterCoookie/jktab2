@@ -137,9 +137,12 @@ public class Tab {
         }
     }
     
-    public void closeUserListings(String username) {
+    /**
+     * changes all current user lisings status to CLOSED, serializes data after
+     */
+    public void closeUserListings() {
         this.listings.forEach(listing -> {
-            if(listing.getAuthorUname().equals(username)) {
+            if(listing.getAuthorUname().equals(this.username)) {
                 listing.closeListing();
             }
         });

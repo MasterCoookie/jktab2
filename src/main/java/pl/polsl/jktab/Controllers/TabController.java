@@ -67,6 +67,9 @@ public class TabController {
                             this.view.handleErrMsg(e.getMessage());
                         }
                     }
+                    if(this.view.requestStr("C", "Insert \"C\" to close all of your listings")) {
+                        this.model.closeUserListings();
+                    }
                 }
             }
         } while(!this.view.requestStr("Q", "If you wish to quit the app, input \"Q\""));

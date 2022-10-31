@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: ListingTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.1 s <<< FAILURE! - in ListingTest
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.104 s <<< FAILURE! - in ListingTest
 testGenerateCode{String, String}[3]  Time elapsed: 0.007 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: NullPointerException occurred
 	at ListingTest.testGenerateCode(ListingTest.java:51)

@@ -1,12 +1,20 @@
 -------------------------------------------------------------------------------
 Test set: TabTest
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! - in TabTest
+Tests run: 6, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.026 s <<< FAILURE! - in TabTest
 testRemoveListingException  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "pl.polsl.jktab.Models.Listing.getAuthorUname()" because the return value of "java.util.List.get(int)" is null
 	at TabTest.testRemoveListingException(TabTest.java:65)
 
-testRemoveListing  Time elapsed: 0.001 s  <<< ERROR!
+testRemoveListing{int}[1]  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 6
+	at TabTest.testRemoveListing(TabTest.java:55)
+
+testRemoveListing{int}[2]  Time elapsed: 0.001 s  <<< ERROR!
 java.lang.NullPointerException: Cannot invoke "pl.polsl.jktab.Models.Listing.getAuthorUname()" because the return value of "java.util.List.get(int)" is null
-	at TabTest.testRemoveListing(TabTest.java:52)
+	at TabTest.testRemoveListing(TabTest.java:55)
+
+testRemoveListing{int}[3]  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 99999 out of bounds for length 6
+	at TabTest.testRemoveListing(TabTest.java:55)
 
