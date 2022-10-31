@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TabTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! - in TabTest
+testRemoveListingException  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pl.polsl.jktab.Models.Listing.getAuthorUname()" because the return value of "java.util.List.get(int)" is null
+	at TabTest.testRemoveListingException(TabTest.java:65)
+
+testRemoveListing  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "pl.polsl.jktab.Models.Listing.getAuthorUname()" because the return value of "java.util.List.get(int)" is null
+	at TabTest.testRemoveListing(TabTest.java:52)
+
