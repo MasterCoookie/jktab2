@@ -10,7 +10,7 @@ import java.io.Serializable;
  * Class that represents a single listing, or entry created in a notice board (Tab),
  * it inherites form Serializable, so that list of its instances can be saved to a file easly 
  * @author JK
- * @version f1.0
+ * @version f2.0
  */
 public class Listing implements Serializable {
     /**
@@ -51,7 +51,8 @@ public class Listing implements Serializable {
     private Status status;
     
     /**
-     * 6-argument constructor, used when creating a new Listing
+     * 6-argument constructor, used when creating a new Listing,
+     * all newly created listings are AVILABLE
      * @param title listing title
      * @param price asked price
      * @param desc detailed, longer listing descryption
@@ -84,6 +85,10 @@ public class Listing implements Serializable {
             address = address.replace(" ", "-");
             return "TAB" + this.title.charAt(0) + this.authorUname.charAt(0) + this.price +"-" + address;
         }
+    }
+    
+    public void closeListing() {
+        this.status = Status.CLOSED;
     }
 
     public String getAuthorUname() {

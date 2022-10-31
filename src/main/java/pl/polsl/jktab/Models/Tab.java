@@ -136,4 +136,13 @@ public class Tab {
           this.listings = new ArrayList<Listing>();
         }
     }
+    
+    public void closeUserListings(String username) {
+        this.listings.forEach(listing -> {
+            if(listing.getAuthorUname().equals(username)) {
+                listing.closeListing();
+            }
+        });
+        this.serializeListings();
+    }
 }
