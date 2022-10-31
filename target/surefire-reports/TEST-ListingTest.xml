@@ -15,7 +15,7 @@
     <property name="user.country" value="PL"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Jan\AppData\Local\Temp\surefire10044880696182069612\surefirebooter8744379290732704559.jar C:\Users\Jan\AppData\Local\Temp\surefire10044880696182069612 2022-10-31T16-42-04_983-jvmRun1 surefire13020765678516518188tmp surefire_015449229906344598546tmp"/>
+    <property name="sun.java.command" value="C:\Users\Jan\AppData\Local\Temp\surefire3032536149740120374\surefirebooter10750947373347978457.jar C:\Users\Jan\AppData\Local\Temp\surefire3032536149740120374 2022-10-31T17-06-04_286-jvmRun1 surefire1506882854073369364tmp surefire_04720889995178097624tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Jan\Documents\NetBeansProjects\jktab2\jktab\target\test-classes;C:\Users\Jan\Documents\NetBeansProjects\jktab2\jktab\target\classes;C:\Users\Jan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Jan\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Jan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Jan\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Jan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\Jan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Jan\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Jan\AppData\Local\Temp\surefire10044880696182069612\surefirebooter8744379290732704559.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Jan\AppData\Local\Temp\surefire3032536149740120374\surefirebooter10750947373347978457.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.4.1+1-LTS-2"/>
@@ -58,7 +58,7 @@
     <property name="java.class.version" value="61.0"/>
   </properties>
   <testcase name="testGenerateCode{String, String}[1]" classname="ListingTest" time="0.036"/>
-  <testcase name="testGenerateCode{String, String}[2]" classname="ListingTest" time="0"/>
+  <testcase name="testGenerateCode{String, String}[2]" classname="ListingTest" time="0.001"/>
   <testcase name="testGenerateCode{String, String}[3]" classname="ListingTest" time="0.007">
     <failure message="NullPointerException occurred" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: NullPointerException occurred
 	at ListingTest.testGenerateCode(ListingTest.java:51)

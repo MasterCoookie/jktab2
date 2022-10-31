@@ -15,7 +15,7 @@ import java.util.List;
 /**
  *
  * @author JK
- * @version f1.0
+ * @version f2.0
  */
 public class Tab {
     /**
@@ -78,26 +78,32 @@ public class Tab {
      * serializeListings method
      * 
      * @param listing instance to be added to list
-     * @see pl.polsl.jktab.Models.Tab#serializeListings() 
+     * @param serialize should the class serialize its listings after addition?
+     * @see pl.polsl.jktab.Models.Tab#serializeListings()
      */
-    public void addListing(Listing listing) {
+    public void addListing(Listing listing, boolean serialize) {
         this.listings.add(listing);
-        this.serializeListings();
+        if(serialize) {
+            this.serializeListings();
+        }
     }
     
     /**
      * Removes listing from Listings arrayList.
      * @param index index at which the deletion will take place
      * @param username Current user name, used to validate access
+     * @param serialize should the class serialize its listings after deletion?
      * @throws ListingAccessException thrown when user tries to delete someone elses listing
      */
-    public void removeListing(int index, String username)
+    public void removeListing(int index, String username, boolean serialize)
     throws ListingAccessException {
         if(!this.listings.get(index).getAuthorUname().equals(username)) {
             throw new ListingAccessException("You cannot delete this listing!");
         } else {
             this.listings.remove(index);
-            this.serializeListings();
+            if(serialize) {
+                this.serializeListings();
+            }
         }
     }
     

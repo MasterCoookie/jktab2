@@ -28,10 +28,12 @@ public class TabTest {
     @BeforeAll
     public void setUpClass() {
         var testListing = new Listing("Title1", 1.11f, "deschere", false, username, "123456789");
-        var testListing2 = new Listing("Title2", 2.22f, "deschere2", true, username2, "323456789");
+        var testListing2 = new Listing("Title2", 2.22f, "deschere2", true, username, "323456789");
+        var testListing3 = new Listing("Title3", 2.22f, "deschere3", true, username2, "423456789");
         ArrayList<Listing> listings = new ArrayList<Listing>();
         listings.add(testListing);
         listings.add(testListing2);
+        listings.add(testListing3);
         this.tab = new Tab(listings);
     }
     
@@ -42,17 +44,20 @@ public class TabTest {
     
     @Test
     public void addListingTest() {
-        this.tab.addListing(null);
+        this.tab.addListing(null, false);
         
-        var testListing3 = new Listing("Title3", 3.33f, "deschere3", false, username, "423456789");
-        this.tab.addListing(testListing3);
+        var testListing4 = new Listing("Title4", 3.33f, "deschere4", false, username, "523456789");
+        this.tab.addListing(testListing4, false);
     }
     
     @ParameterizedTest
-    @ValueSource(ints = {-1, 0, 99999})
-    public void testRemoveListing(int index) {       
+    @ValueSource(ints = {0, -1, 99999})
+    public void testRemoveListing(int index) {
+        var testListing4 = new Listing("Title4", 3.33f, "deschere4", false, username, "523456789");
+        this.tab.addListing(testListing4, false);
+ 
         try {
-            this.tab.removeListing(index, username2);
+            this.tab.removeListing(index, username, false);
         } catch(ListingAccessException e) {
             fail("ListingAccessException occurred");
         }
@@ -62,7 +67,7 @@ public class TabTest {
     @Test
     public void testRemoveListingException() {
         try {
-            this.tab.removeListing(0, username2);
+            this.tab.removeListing(0, username2, false);
         }catch(ListingAccessException e) {
             fail("ListingAccessException occurred");
         }

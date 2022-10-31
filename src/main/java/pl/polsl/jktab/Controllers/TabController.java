@@ -39,7 +39,7 @@ public class TabController {
         do {
             if(this.view.requestStr("I", "\nWelcome to TAB, Insert \"L\" to see avilable listings or \"I\" to insert your own")) {
 
-                this.model.addListing(ListingView.createListing(this.model.getUsername(), this.model.getContact()));
+                this.model.addListing(ListingView.createListing(this.model.getUsername(), this.model.getContact()), true);
           
             } else {
                 this.view.printListings(this.model.getListings());
@@ -54,7 +54,7 @@ public class TabController {
 
                     if(this.view.requestStr("D", "If you wish to delete this listing, insert \"D\"")) {
                         try {
-                            this.model.removeListing(index, this.model.getUsername());
+                            this.model.removeListing(index, this.model.getUsername(), true);
                         } catch(ListingAccessException e) {
                             this.view.handleErrMsg(e.getMessage());
                         }
