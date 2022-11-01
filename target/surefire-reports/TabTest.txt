@@ -1,12 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TabTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.025 s <<< FAILURE! - in TabTest
-testRemoveListing{int}[2]  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.IndexOutOfBoundsException: Index -1 out of bounds for length 1
-	at TabTest.testRemoveListing(TabTest.java:70)
-
-testRemoveListing{int}[3]  Time elapsed: 0.001 s  <<< ERROR!
-java.lang.IndexOutOfBoundsException: Index 99999 out of bounds for length 2
-	at TabTest.testRemoveListing(TabTest.java:70)
-
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in TabTest

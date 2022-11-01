@@ -57,21 +57,33 @@ public class TabTest {
     }
     
     /**
-     * tests various versions of deletion by indexes
+     * tests various versions of deletion by indexes out of bounds,
+     * all test should throw
+     * 
      * @param index indexes of listings to be removed
      */
     @ParameterizedTest
-    @ValueSource(ints = {0, -1, 99999})
+    @ValueSource(ints = {-1, 99999})
+    public void testRemoveListingExcept(int index) {
+        try {
+            this.tab.removeListing(index, username, false);
+            fail("IndexOutOfBoundsException should occurr");
+        } catch(ListingAccessException e) {
+            fail("ListingAccessException occurred");
+        } catch(IndexOutOfBoundsException e) {
+        }         
+    }
+    
+    @ParameterizedTest
+    @ValueSource(ints = {0})
     public void testRemoveListing(int index) {
         var testListing4 = new Listing("Title4", 3.33f, "deschere4", false, username, "523456789");
         this.tab.addListing(testListing4, false);
- 
         try {
             this.tab.removeListing(index, username, false);
         } catch(ListingAccessException e) {
             fail("ListingAccessException occurred");
         }
-        
     }
     
      /**
