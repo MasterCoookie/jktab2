@@ -16,7 +16,7 @@ import pl.polsl.jktab.Models.Tab;
 
 /**
  * @version p2.0
- * @author SuperStudent
+ * @author JK
  */
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TabTest {
@@ -25,6 +25,9 @@ public class TabTest {
     private final String username = "JK";
     private final String username2 = "JK2";
     
+    /**
+     * Prepares listings and tab before each test
+     */
     @BeforeAll
     public void setUpClass() {
         var testListing = new Listing("Title1", 1.11f, "deschere", false, username, "123456789");
@@ -42,6 +45,9 @@ public class TabTest {
         
     }
     
+    /**
+     * Attempts new tlisting addition
+     */
     @Test
     public void addListingTest() {
         this.tab.addListing(null, false);
@@ -50,6 +56,10 @@ public class TabTest {
         this.tab.addListing(testListing4, false);
     }
     
+    /**
+     * tests various versions of deletion by indexes
+     * @param index indexes of listings to be removed
+     */
     @ParameterizedTest
     @ValueSource(ints = {0, -1, 99999})
     public void testRemoveListing(int index) {
@@ -64,6 +74,10 @@ public class TabTest {
         
     }
     
+     /**
+     * intentionally generates ListingAccessException by attempting to remove another users listing
+     * @see pl.polsl.jktab.Models.ListingAccessException
+     */
     @Test
     public void testRemoveListingException() {
         try {
