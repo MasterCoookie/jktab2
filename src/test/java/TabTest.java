@@ -4,6 +4,7 @@
  */
 
 import java.util.ArrayList;
+import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.BeforeAll;
@@ -16,7 +17,7 @@ import pl.polsl.jktab.Models.ListingAccessException;
 import pl.polsl.jktab.Models.Tab;
 
 /**
- * @version p2.0
+ * @version f2.0
  * @author JK
  */
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
@@ -38,17 +39,23 @@ public class TabTest {
         listings.add(testListing);
         listings.add(testListing2);
         listings.add(testListing3);
-        this.tab = new Tab(listings);
+        this.tab = new Tab(listings, username);
     }
     
     @Test
     public void serializationTests() {
         
     }
- 
+    
+    /**
+     * tests gnerateUserListingsNames() Tab method,
+     * not parametrized due to to setup problems
+     */
     @Test
     public void testGenerateUserListingsNames() {
-        //this.tab
+        List<String> names = this.tab.generateUserListingsNames();
+        assertEquals(names.get(0), "Title1");
+        assertEquals(names.get(1), "Title2");
     }
     
     /**

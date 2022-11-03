@@ -14,7 +14,7 @@ import pl.polsl.jktab.Models.Listing;
 import pl.polsl.jktab.Models.ListingAccessException;
 
 /**
- * @version p2.0
+ * @version f2.0
  * @author JK
  */
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)

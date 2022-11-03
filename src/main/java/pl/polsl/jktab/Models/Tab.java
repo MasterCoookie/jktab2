@@ -40,6 +40,16 @@ public class Tab {
     public Tab(ArrayList<Listing> listings) {
         this.listings = listings;
     }
+    
+    /**
+     * 2 argument constructor, used for testing
+     * @param _listings listings array to init with
+     * @param _username username to init with
+     */
+    public Tab(ArrayList<Listing> _listings, String _username) {
+        this.listings = _listings;
+        this.username = _username;
+    }
  
     /**
      * Username of current user
