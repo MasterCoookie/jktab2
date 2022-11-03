@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TabTest" time="0.001" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TabTest" time="0" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="PL"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Jan\AppData\Local\Temp\surefire8501882729007955628\surefirebooter1313668352100407709.jar C:\Users\Jan\AppData\Local\Temp\surefire8501882729007955628 2022-11-03T21-06-10_338-jvmRun1 surefire7572524605592444491tmp surefire_05545570611483902676tmp"/>
+    <property name="sun.java.command" value="C:\Users\Jan\AppData\Local\Temp\surefire13593454985953640671\surefirebooter4163670096014306465.jar C:\Users\Jan\AppData\Local\Temp\surefire13593454985953640671 2022-11-03T23-27-24_173-jvmRun1 surefire11149233896342292131tmp surefire_06285037451459827156tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Jan\Documents\NetBeansProjects\jktab2\jktab\target\test-classes;C:\Users\Jan\Documents\NetBeansProjects\jktab2\jktab\target\classes;C:\Users\Jan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Jan\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Jan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Jan\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Jan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\Jan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Jan\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Jan\AppData\Local\Temp\surefire8501882729007955628\surefirebooter1313668352100407709.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Jan\AppData\Local\Temp\surefire13593454985953640671\surefirebooter4163670096014306465.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.4.1+1-LTS-2"/>
@@ -64,5 +64,6 @@
   <testcase name="testAddListingNull" classname="TabTest" time="0"/>
   <testcase name="testRemoveListingExcept{int}[1]" classname="TabTest" time="0"/>
   <testcase name="testRemoveListingExcept{int}[2]" classname="TabTest" time="0"/>
+  <testcase name="testGenerateEmptyUserListingsNames" classname="TabTest" time="0"/>
   <testcase name="testAddListing" classname="TabTest" time="0"/>
 </testsuite>
