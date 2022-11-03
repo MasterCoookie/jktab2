@@ -11,6 +11,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -153,5 +154,17 @@ public class Tab {
             }
         });
         this.serializeListings();
+    }
+    
+    /**
+     * Gets all listings names posted by current user
+     * @return list of users listings names
+     */
+    public List<String> getUserListingsNames() {
+        List<String> names = this.listings.stream()
+                .filter(listing -> listing.getAuthorUname().equals(this.username))
+                .map(listing -> listing.getTitle())
+                .collect(Collectors.toList());
+        return names;
     }
 }

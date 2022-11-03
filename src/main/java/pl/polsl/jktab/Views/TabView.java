@@ -105,4 +105,12 @@ public class TabView {
         System.out.print("Your generated code is: ");
         System.out.println(code);
     }
+   
+    /**
+     * Prints elments of list, separated by ", "
+     * @param elements elements to be printed
+     */
+    public void printList(List<String> elements) {
+        elements.forEach(name -> System.out.println(name + ", "));
+    }
 }

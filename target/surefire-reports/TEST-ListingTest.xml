@@ -15,7 +15,7 @@
     <property name="user.country" value="PL"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Jan\AppData\Local\Temp\surefire10747646715295100795\surefirebooter8727001070214976911.jar C:\Users\Jan\AppData\Local\Temp\surefire10747646715295100795 2022-11-03T19-05-02_274-jvmRun1 surefire17313346453977036452tmp surefire_09947428106922554444tmp"/>
+    <property name="sun.java.command" value="C:\Users\Jan\AppData\Local\Temp\surefire6260458517340189000\surefirebooter9452946548146575101.jar C:\Users\Jan\AppData\Local\Temp\surefire6260458517340189000 2022-11-03T20-07-04_662-jvmRun1 surefire7496658803990562246tmp surefire_010378256709188234519tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Jan\Documents\NetBeansProjects\jktab2\jktab\target\test-classes;C:\Users\Jan\Documents\NetBeansProjects\jktab2\jktab\target\classes;C:\Users\Jan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Jan\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Jan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Jan\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Jan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\Jan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Jan\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Jan\AppData\Local\Temp\surefire10747646715295100795\surefirebooter8727001070214976911.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Jan\AppData\Local\Temp\surefire6260458517340189000\surefirebooter9452946548146575101.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.4.1+1-LTS-2"/>
@@ -57,7 +57,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testGenerateCode{String, String}[1]" classname="ListingTest" time="0.037"/>
+  <testcase name="testGenerateCode{String, String}[1]" classname="ListingTest" time="0.036"/>
   <testcase name="testGenerateCode{String, String}[2]" classname="ListingTest" time="0.001"/>
   <testcase name="testGenerateCode{String, String}[3]" classname="ListingTest" time="0"/>
   <testcase name="testGenerateCodeException" classname="ListingTest" time="0.001"/>

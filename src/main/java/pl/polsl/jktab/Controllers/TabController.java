@@ -70,6 +70,9 @@ public class TabController {
                     if(this.view.requestStr("C", "Insert \"C\" to close all of your listings")) {
                         this.model.closeUserListings();
                     }
+                    if(this.view.requestStr("U", "Insert \"U\" to see all of your listings")) {
+                        this.view.printList(this.model.getUserListingsNames());
+                    }
                 }
             }
         } while(!this.view.requestStr("Q", "If you wish to quit the app, input \"Q\""));
