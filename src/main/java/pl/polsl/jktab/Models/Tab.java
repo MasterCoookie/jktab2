@@ -38,7 +38,7 @@ public class Tab {
      * @param listings listings array to init with
      */
     public Tab(ArrayList<Listing> listings) {
-        this.deserializeListings();
+        this.listings = listings;
     }
  
     /**
@@ -157,10 +157,11 @@ public class Tab {
     }
     
     /**
-     * Gets all listings names posted by current user
+     * Gets all listings names posted by current user,
+     * It utilizes stream
      * @return list of users listings names
      */
-    public List<String> getUserListingsNames() {
+    public List<String> generateUserListingsNames() {
         List<String> names = this.listings.stream()
                 .filter(listing -> listing.getAuthorUname().equals(this.username))
                 .map(listing -> listing.getTitle())

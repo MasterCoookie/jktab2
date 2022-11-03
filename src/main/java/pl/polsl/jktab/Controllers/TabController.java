@@ -71,7 +71,7 @@ public class TabController {
                         this.model.closeUserListings();
                     }
                     if(this.view.requestStr("U", "Insert \"U\" to see all of your listings")) {
-                        this.view.printList(this.model.getUserListingsNames());
+                        this.view.printList(this.model.generateUserListingsNames());
                     }
                 }
             }

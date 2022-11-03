@@ -45,6 +45,11 @@ public class TabTest {
     public void serializationTests() {
         
     }
+ 
+    @Test
+    public void testGenerateUserListingsNames() {
+        //this.tab
+    }
     
     /**
      * Attempts new correct tlisting addition
@@ -63,7 +68,7 @@ public class TabTest {
     @Test
     public void testAddListingNull() {
         this.tab.addListing(null, false);
-        assertEquals(this.tab.getListings().get(0), null);
+        assertEquals(this.tab.getListings().get(2), null);
     }
     
     /**
@@ -73,7 +78,7 @@ public class TabTest {
      * @param index indexes of listings to be removed
      */
     @ParameterizedTest
-    @ValueSource(ints = {-1, 99999, 1})
+    @ValueSource(ints = {-1, 99999})
     public void testRemoveListingExcept(int index) {
         try {
             this.tab.removeListing(index, username, false);
@@ -107,7 +112,7 @@ public class TabTest {
     @Test
     public void testRemoveListingException() {
         try {
-            this.tab.removeListing(0, username2, false);
+            this.tab.removeListing(0, username, false);
         }catch(ListingAccessException e) {
             fail("ListingAccessException occurred");
         }
