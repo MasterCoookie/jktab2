@@ -70,6 +70,16 @@ public class TabTest {
     }
     
     /**
+     * tests gnerateUserListingsNames() Tab method for user with no listings
+     * expects its size to be 0
+     */
+    @Test
+    public void testGenerateUserNoListingsNames() {
+        Tab emptyUserTab = new Tab((ArrayList)this.tab.getListings(), "notexistinguser");
+        assertEquals(emptyUserTab.generateUserListingsNames().size(), 0);
+    }
+   
+    /**
      * Attempts new correct tlisting addition
      */
     @Test
