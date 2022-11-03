@@ -4,6 +4,7 @@
  */
 
 import java.util.ArrayList;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -46,14 +47,23 @@ public class TabTest {
     }
     
     /**
-     * Attempts new tlisting addition
+     * Attempts new correct tlisting addition
      */
     @Test
-    public void addListingTest() {
+    public void testAddListing() {
         this.tab.addListing(null, false);
         
         var testListing4 = new Listing("Title4", 3.33f, "deschere4", false, username, "523456789");
         this.tab.addListing(testListing4, false);
+    }
+    
+    /**
+     * tests addListing method null addition
+     */
+    @Test
+    public void testAddListingNull() {
+        this.tab.addListing(null, false);
+        assertEquals(this.tab.getListings().get(0), null);
     }
     
     /**
@@ -63,7 +73,7 @@ public class TabTest {
      * @param index indexes of listings to be removed
      */
     @ParameterizedTest
-    @ValueSource(ints = {-1, 99999})
+    @ValueSource(ints = {-1, 99999, 1})
     public void testRemoveListingExcept(int index) {
         try {
             this.tab.removeListing(index, username, false);
@@ -74,6 +84,10 @@ public class TabTest {
         }         
     }
     
+    /**
+     * tests correct listing removal by index
+     * @param index index of liisting to be deleted
+     */
     @ParameterizedTest
     @ValueSource(ints = {0})
     public void testRemoveListing(int index) {
