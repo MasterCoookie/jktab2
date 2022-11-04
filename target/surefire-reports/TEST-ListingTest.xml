@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ListingTest" time="0.094" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ListingTest" time="0.107" tests="12" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="user.country" value="PL"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.4.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\Jan\AppData\Local\Temp\surefire15397861159488418742\surefirebooter2478559011403253561.jar C:\Users\Jan\AppData\Local\Temp\surefire15397861159488418742 2022-11-03T23-33-13_693-jvmRun1 surefire16997039897973356817tmp surefire_0639013507712298482tmp"/>
+    <property name="sun.java.command" value="C:\Users\Jan\AppData\Local\Temp\surefire760907598887069052\surefirebooter16390502444844478697.jar C:\Users\Jan\AppData\Local\Temp\surefire760907598887069052 2022-11-04T14-32-16_785-jvmRun1 surefire3896416254589965882tmp surefire_07027160700214054539tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Jan\Documents\NetBeansProjects\jktab2\jktab\target\test-classes;C:\Users\Jan\Documents\NetBeansProjects\jktab2\jktab\target\classes;C:\Users\Jan\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\Jan\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Jan\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Jan\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\Jan\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\Jan\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\Jan\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Jan\AppData\Local\Temp\surefire15397861159488418742\surefirebooter2478559011403253561.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Jan\AppData\Local\Temp\surefire760907598887069052\surefirebooter16390502444844478697.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.4.1+1-LTS-2"/>
@@ -57,9 +57,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="testGenerateCode{String, String}[1]" classname="ListingTest" time="0.035"/>
+  <testcase name="testGenerateCode{String, String}[1]" classname="ListingTest" time="0.036"/>
   <testcase name="testGenerateCode{String, String}[2]" classname="ListingTest" time="0.001"/>
-  <testcase name="testGenerateCode{String, String}[3]" classname="ListingTest" time="0"/>
-  <testcase name="testGenerateCode{String, String}[4]" classname="ListingTest" time="0.001"/>
-  <testcase name="testGenerateCodeException" classname="ListingTest" time="0"/>
+  <testcase name="testGenerateCode{String, String}[3]" classname="ListingTest" time="0.001"/>
+  <testcase name="testGenerateCode{String, String}[4]" classname="ListingTest" time="0"/>
+  <testcase name="testGenerateCode{String, String}[5]" classname="ListingTest" time="0.001"/>
+  <testcase name="testGenerateCode{String, String}[6]" classname="ListingTest" time="0.001"/>
+  <testcase name="testGenerateCode{String, String}[7]" classname="ListingTest" time="0.001"/>
+  <testcase name="testGenerateCodeException" classname="ListingTest" time="0.001"/>
+  <testcase name="testGenerateInvalidCode{String}[1]" classname="ListingTest" time="0"/>
+  <testcase name="testGenerateInvalidCode{String}[2]" classname="ListingTest" time="0"/>
+  <testcase name="testGenerateInvalidCode{String}[3]" classname="ListingTest" time="0"/>
+  <testcase name="testGenerateInvalidCode{String}[4]" classname="ListingTest" time="0"/>
 </testsuite>

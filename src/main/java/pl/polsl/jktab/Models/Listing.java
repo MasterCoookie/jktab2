@@ -82,6 +82,9 @@ public class Listing implements Serializable {
         if(!this.authorUname.equals(username)) {
             throw new ListingAccessException("You can only generate codes of your own listings!");
         } else {
+            if(address.replace(" ", "").length() < 5 || address.length() > 48) {
+                return "INVALID";
+            }
             address = address.replace(" ", "-");
             return "TAB" + this.title.charAt(0) + this.authorUname.charAt(0) + this.price +"-" + address;
         }
