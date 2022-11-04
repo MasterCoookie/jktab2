@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"pl.polsl.jktab"},{"l":"pl.polsl.jktab.Controllers"},{"l":"pl.polsl.jktab.Models"},{"l":"pl.polsl.jktab.Views"}];updateSearchResults();
